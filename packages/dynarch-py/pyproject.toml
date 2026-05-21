@@ -1,0 +1,30 @@
+[project]
+name = "dynarch-py"
+version = "1.0.0"
+description = "Metadata-architecture, plug and play"
+keywords = []
+authors = [
+    { name = "Alexander Matos" },
+    { name = "Francisco Daniel Castro Borrome" }
+]
+requires-python = ">=3.11"
+license = { text = "Proprietary / Revenue Share" }
+
+[project.scripts]
+start = "dynarch_py:main"
+
+# Custom license metadata — equivalent to the license object in package.json
+[tool.dynarch.license]
+type = "Proprietary / Revenue Share"
+summary = "Internal use is permitted at no cost. Commercial use or revenue-generating activities require a commercial license."
+software_name = "dynarch"
+
+[tool.dynarch.license.usage_policy]
+internal_use_allowed = true
+commercial_use_allowed = false
+requires_commercial_license = true
+license_url = "https://dynarch.net"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

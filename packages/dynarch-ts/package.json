@@ -1,0 +1,33 @@
+{
+  "name": "dynarch-ts",
+  "version": "1.0.0",
+  "description": "Metadata-architecture, plug and play",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "authors": [
+    "Alexander Matos",
+    "Francisco Daniel Castro Borrome"
+  ],
+  "license": "Proprietary",
+  "licenseDetails": {
+    "type": "Proprietary / Revenue Share",
+    "summary": "Internal use is permitted at no cost. Commercial use or revenue-generating activities require a commercial license.",
+    "usage_policy": {
+      "internal_use_allowed": true,
+      "commercial_use_allowed": false,
+      "requires_commercial_license": true,
+      "license_url": "https://dynarch.net"
+    },
+    "software_name": "dynarch"
+  },
+  "packageManager": "pnpm@10.33.4",
+  "dependencies": {
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1"
+  }
+}

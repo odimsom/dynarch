@@ -1,0 +1,42 @@
+{
+  "name": "dynarch-ui",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Metadata-architecture, plug and play",
+  "keywords": [],
+  "authors": [
+    "Alexander Matos",
+    "Francisco Daniel Castro Borrome"
+  ],
+  "license": "Proprietary",
+  "licenseDetails": {
+    "type": "Proprietary / Revenue Share",
+    "summary": "Internal use is permitted at no cost. Commercial use or revenue-generating activities require a commercial license.",
+    "usage_policy": {
+      "internal_use_allowed": true,
+      "commercial_use_allowed": false,
+      "requires_commercial_license": true,
+      "license_url": "https://dynarch.net"
+    },
+    "software_name": "dynarch"
+  },
+  "packageManager": "pnpm@10.33.4",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "svelte-kit sync || echo ''",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^7.0.1",
+    "@sveltejs/kit": "^2.57.0",
+    "@sveltejs/vite-plugin-svelte": "^7.0.0",
+    "svelte": "^5.55.2",
+    "svelte-check": "^4.4.6",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.7"
+  }
+}

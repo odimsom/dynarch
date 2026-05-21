@@ -1,0 +1,16 @@
+services:
+  dynarch-api:
+    build:
+      context: ./apps/dynarch-api
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+
+  dynarch-ui:
+    build:
+      context: ./apps/dynarch-ui
+    ports:
+      - "5173:5173"
+    depends_on:
+      - dynarch-api
